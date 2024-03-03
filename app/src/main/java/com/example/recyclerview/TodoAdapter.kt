@@ -20,6 +20,7 @@ class TodoAdapter(
 
 
     //Inflates the row layout
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_layout, parent, false)
@@ -31,7 +32,7 @@ class TodoAdapter(
 
     override fun getItemCount(): Int {
         //Return the size of the TodoList of data
-        return dataList.siz
+        return dataList.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
